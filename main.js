@@ -65,7 +65,6 @@ function createSiteUI() {
     const link = document.createElement('a');
     link.classList.add('site');
     link.setAttribute('href', `${address}`);
-    link.setAttribute('target', '_blank');
     link.setAttribute('rel', "noopener noreferrer");
     link.style.setProperty('--site-background-color', `linear-gradient(
       135deg,
@@ -174,21 +173,25 @@ function submitSiteSearch(e) {
 
   if (input.startsWith('*')) {
     const query = input.slice(1, input.length);
-    window.open(googleSearch + query, '_blank', 'noopener noreferrer');
+    // window.open(googleSearch + query, 'noopener noreferrer');
+    window.location.href = googleSearch + query;
 
   } else if (input.startsWith('-')) {
     const query = input.slice(1, input.length);
-    window.open(ddgSearch + query, '_blank', 'noopener noreferrer');
+    // window.open(ddgSearch + query, 'noopener noreferrer');
+    window.location.href = ddgSearch + query;
 
   } else {
     sites.forEach(site => {
       const { address, key, search } = site;
       if (input === key) {
-        window.open(address, '_blank', 'noopener noreferrer');
+        // window.open(address, 'noopener noreferrer');
+        window.location.href = address;
 
       } else if (input.startsWith(key + querySearchDelimiter) && site.search !== undefined) {
         const query = input.slice(2, input.length);
-        window.open(search + query, '_blank', 'noopener noreferrer');
+        // window.open(search + query, 'noopener noreferrer');
+        window.location.href = search + query;
 
       }
     });
