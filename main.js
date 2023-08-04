@@ -168,6 +168,7 @@ function submitSiteSearch(e) {
 
   const input = searchSiteInput.value;
   const querySearchDelimiter = ":";
+  const directPageDelimiter = "/";
   const googleSearch = 'https://www.google.com/search?&q=';
   const ddgSearch = 'https://duckduckgo.com/?q=';
 
@@ -189,10 +190,14 @@ function submitSiteSearch(e) {
         window.location.href = address;
 
       } else if (input.startsWith(key + querySearchDelimiter) && site.search !== undefined) {
-        const query = input.slice(2, input.length);
+        const query = input.slice(3, input.length);
         // window.open(search + query, 'noopener noreferrer');
         window.location.href = search + query;
 
+      } else if (input.startsWith(key + directPageDelimiter) && site.search !== undefined) {
+        const query = input.slice(3, input.length);
+        // window.open(search + query, 'noopener noreferrer');
+        window.location.href = address + query;
       }
     });
   }

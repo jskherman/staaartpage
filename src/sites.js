@@ -6,7 +6,7 @@ let sitesDB = [
     id: uuidv4(),
     name: 'google',
     address: 'https://google.com/',
-    key: 'g',
+    key: 'go',
     search: 'https://www.google.com/search?q=',
     hues: ['92', '72']
   },
@@ -14,7 +14,7 @@ let sitesDB = [
     id: uuidv4(),
     name: 'bing',
     address: 'https://bing.com/',
-    key: 'b',
+    key: 'bi',
     search: 'https://www.bing.com/search?q=',
     hues: ['200', '180']
   },
