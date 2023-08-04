@@ -166,7 +166,7 @@ function addSite(e) {
 function submitSiteSearch(e) {
   e.preventDefault();
 
-  const input = searchSiteInput.value;
+  const input = searchSiteInput.value.toLowerCase();
   const querySearchDelimiter = ":";
   const directPageDelimiter = "/";
   const googleSearch = 'https://www.google.com/search?&q=';
