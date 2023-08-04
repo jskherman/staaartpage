@@ -168,7 +168,7 @@ function submitSiteSearch(e) {
   e.preventDefault();
 
   const input = searchSiteInput.value;
-  const querySearchDelimiter = "'";
+  const querySearchDelimiter = ":";
   const googleSearch = 'https://www.google.com/search?&q=';
   const ddgSearch = 'https://duckduckgo.com/?q=';
 
