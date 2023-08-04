@@ -11,9 +11,9 @@ This is a fork of [@poradrian](https://github.com/poradrian)'s [startpage repo](
 - If the user wants to use DuckDuckGo search, he can type the minus symbol, followed by the query.
 
 ## Examples
-- Entering `rd` will redirect to <reddit.com>
+- Entering `rd` will redirect to [reddit.com](https://reddit.com)
 - Entering `rd:piracy` will search `piracy` on Reddit
-- Entering `rd/r/piracy` will go to the page <reddit.com/r/piracy>
+- Entering `rd/r/piracy` will go to the page [reddit.com/r/piracy](https://reddit.com/r/piracy)
 - Entering `*piracy` will search `piracy` on Google
 - Entering `-piracy` will search `piracy` on DuckDuckGo
 
