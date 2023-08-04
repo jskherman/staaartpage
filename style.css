@@ -32,13 +32,16 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
+
 html {
   height: 100%;
 }
+
 body {
   min-height: 100vh;
   width: 100%;
 }
+
 /*
 Sections
 ========
@@ -51,7 +54,7 @@ Remove the margin in all browsers.
 body {
   margin: 0;
   padding: 0;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Cascadia Code", "JetBrains Mono", monospace;
 }
 
 /**
@@ -126,6 +129,7 @@ select {
   0% {
     background-position: 0px 0px;
   }
+
   100% {
     background-position: 0px 8px;
   }
@@ -140,7 +144,7 @@ select {
   overflow: hidden;
   height: 100vh;
   width: 100vw;
-  background-image: url("/src/assets/bg.png");
+  background-image: url("/src/assets/bg-aokana.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,11 +167,9 @@ select {
 
 .container {
   display: flex;
-  background: linear-gradient(
-    120deg,
-    rgba(46, 52, 64, 0.85) 45%,
-    rgba(47, 44, 44, 0.8) 95%
-  );
+  background: linear-gradient(120deg,
+      rgba(46, 52, 64, 0.85) 45%,
+      rgba(47, 44, 44, 0.8) 95%);
   border-radius: 5px;
   box-shadow: 0 0 30px #000;
   font-size: 0.8rem;
@@ -293,6 +295,7 @@ select {
 }
 
 @media screen and (max-width: 780px) {
+
   .search-city-input,
   .search-site-input {
     padding: 0.5rem 0;
@@ -315,7 +318,7 @@ select {
 }
 
 .weather-info {
-  background-image: url("/src/assets/bg-weather.webp");
+  background-image: url("/src/assets/bg-sunset.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -328,7 +331,7 @@ select {
 .city {
   display: flex;
   justify-content: center;
-  color: var(--color-red);
+  color: #fff;
   letter-spacing: 0.1em;
   margin-top: 0;
   padding-top: 12px;
@@ -338,10 +341,11 @@ select {
   display: flex;
   margin-left: 15px;
   padding-top: 10px;
+  color: #000;
 }
 
 .temp {
-  color: var(--color-red);
+  color: var(--color-bg);
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -359,10 +363,12 @@ select {
 .humidity {
   margin-top: 15px;
   margin-left: 15px;
+  color: var(--color-bg);
 }
 
 .wind-speed {
   margin-left: 15px;
+  color: var(--color-bg);
 }
 
 @media screen and (max-width: 980px) {
@@ -371,33 +377,33 @@ select {
   }
 
   .weather-info {
-    background-image: url("/src/assets/bg-weather-sm.webp");
+    background-image: url("/src/assets/bg-town.webp");
     height: 100%;
     padding: 16px 0;
   }
 
   .city {
-    color: #fffb00;
+    color: #fff;
     padding-top: 0;
   }
 
   .temp-details {
-    color: #fff;
+    color: aquamarine;
     margin-left: 45px;
     padding-top: 4px;
   }
 
   .temp {
-    color: #fffb00;
+    color: aquamarine;
   }
 
   .humidity {
-    color: #fff;
+    color: aquamarine;
     margin-left: 45px;
   }
 
   .wind-speed {
-    color: #fff;
+    color: aquamarine;
     margin-left: 45px;
     padding-bottom: 8px;
   }
@@ -621,6 +627,7 @@ li {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -667,7 +674,7 @@ li {
   margin-top: 1.5rem;
 }
 
-.form-container > :not([hidden]) ~ :not([hidden]) {
+.form-container> :not([hidden])~ :not([hidden]) {
   margin-top: 1.5rem;
 }
 
@@ -675,7 +682,8 @@ li {
   .form-container {
     margin-top: 1.25rem;
   }
-  .form-container > :not([hidden]) ~ :not([hidden]) {
+
+  .form-container> :not([hidden])~ :not([hidden]) {
     margin-top: 1.25rem;
   }
 }
@@ -861,7 +869,7 @@ textarea#description {
   margin-left: 0.75rem;
 }
 
-.alert-success-text > p {
+.alert-success-text>p {
   color: rgba(6, 95, 70, 1);
   font-size: 0.875rem;
   font-weight: 500;
@@ -898,7 +906,7 @@ textarea#description {
   margin-left: 0.75rem;
 }
 
-.alert-error-text > p {
+.alert-error-text>p {
   color: var(--color-red);
   font-size: 0.875rem;
   font-weight: 500;
