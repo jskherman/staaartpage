@@ -50,7 +50,7 @@ let sitesDB = [
   },
   {
     id: uuidv4(),
-    name: 'b-chatgpt',
+    name: 'bettergpt',
     address: 'https://bettergpt.chat/',
     key: 'ai',
     hues: ['349', '329']
