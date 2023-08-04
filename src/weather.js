@@ -8,7 +8,7 @@ const descr = document.querySelector('.description');
 const hum = document.querySelector('.humidity');
 const windSpeed = document.querySelector('.wind-speed');
 
-function fetchWeather(city = 'bucharest') {
+function fetchWeather(city = 'legazpi city') {
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKEY}`)
     .then(res => res.json()
       .then(data => displayWeather(data))
