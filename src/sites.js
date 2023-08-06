@@ -135,7 +135,7 @@ let sitesDB = [
     name: 'reddit',
     address: 'https://www.reddit.com/',
     key: 'rd',
-    search: 'https://www.reddit.com/search?q=',
+    search: 'https://www.google.com/search?q=site%3Areddit.com+',
     hues: ['45', '5']
   },
   {
